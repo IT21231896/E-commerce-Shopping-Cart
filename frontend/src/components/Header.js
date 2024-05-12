@@ -37,7 +37,12 @@ const Header = () => {
                   <LinkContainer to="/profile">
                     <NavDropdown.Item>Profile</NavDropdown.Item>
                   </LinkContainer>
-                  <NavDropdown.Item onClick={logoutHandler}>
+                  <NavDropdown.Item
+                    onClick={() => {
+                      logoutHandler();
+                      window.location.href = "/login";
+                    }}
+                  >
                     Logout
                   </NavDropdown.Item>
                 </NavDropdown>

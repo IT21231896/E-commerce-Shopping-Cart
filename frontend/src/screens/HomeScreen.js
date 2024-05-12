@@ -52,7 +52,7 @@ const HomeScreen = ({ match }) => {
       )}
       <h1>Latest Products</h1>
       <Row>
-        <Col md={3}>
+        <Col md={2}>
           <Form.Group controlId="priceRange">
             <Form.Label>Price Range</Form.Label>
             <Form.Control
@@ -68,7 +68,7 @@ const HomeScreen = ({ match }) => {
             </Form.Control>
           </Form.Group>
           <Form.Group controlId="minRating">
-            <Form.Label>Minimum Rating</Form.Label>
+            <Form.Label>Rating</Form.Label>
             <Form.Control
               as="select"
               value={minRating}
@@ -85,11 +85,23 @@ const HomeScreen = ({ match }) => {
           <Form.Group controlId="category">
             <Form.Label>Category</Form.Label>
             <Form.Control
-              type="text"
-              placeholder="Enter category"
+              as="select"
               value={category}
               onChange={handleCategoryChange}
-            />
+            >
+              <option value="">All</option>
+              <option value="Electronics">Electronics</option>
+              <option value="Clothing">Clothing</option>
+              <option value="Books">Books</option>
+              <option value="Accessories">Accessories</option>
+              <option value="Sports">Sports</option>
+              <option value="Home">Home</option>
+              <option value="Health">Health</option>
+              <option value="Beauty">Beauty</option>
+              <option value="Outdoor">Outdoor</option>
+              <option value="Kitchen">Kitchen</option>
+              <option value="Baby">Baby</option>
+            </Form.Control>
           </Form.Group>
         </Col>
         <Col md={9}>
@@ -101,7 +113,7 @@ const HomeScreen = ({ match }) => {
             <>
               <Row>
                 {products.map((product) => (
-                  <Col key={product._id} sm={12} md={6} lg={4} xl={3}>
+                  <Col key={product._id} sm={12} md={6} lg={4} xl={4}>
                     <Card className="my-3 p-3 rounded">
                       <Link to={`/product/${product._id}`}>
                         <Card.Img src={product.image} variant="top" />
