@@ -79,6 +79,4 @@ jane@example.com (Customer)
 
 ## License
 
-The MIT License
-
 © 2024 Asardeen Azees

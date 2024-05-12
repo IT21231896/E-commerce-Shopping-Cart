@@ -1,3 +1,5 @@
+{
+  /*
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { Card} from 'react-bootstrap'
@@ -24,4 +26,5 @@ const Product = ({ product }) => {
   )
 }
 
-export default Product
+export default Product*/
+}
