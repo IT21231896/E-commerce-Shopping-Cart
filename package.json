@@ -2,7 +2,7 @@
   "engines": {
     "node": ">=12.19.0"
   },
-  "name": "e-commerr",
+  "name": "e-commerce",
   "version": "1.0.0",
   "description": "MERN shopping cart app",
   "main": "server.js",
@@ -16,16 +16,7 @@
     "data:destroy": "node backend/seeder -d",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/prakashjha18/MERN-stack-E-commerce-application.git"
-  },
-  "author": "Prakash Jha",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/prakashjha18/MERN-stack-E-commerce-application/issues"
-  },
-  "homepage": "https://github.com/prakashjha18/MERN-stack-E-commerce-application#readme",
+  "author": "Asardeen Azees",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "dotenv": "^8.2.0",
